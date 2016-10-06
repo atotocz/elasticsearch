@@ -1,0 +1,9 @@
+network.host: 0.0.0.0
+
+index.number_of_shards: 1
+index.number_of_replicas: 0
+index.max_result_window: 2000000000
+
+script.engine.groovy.inline.aggs: true
+script.engine.groovy.inline.mapping: true
+script.engine.groovy.inline.search: true

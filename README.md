@@ -1,2 +1,4 @@
-# elasticsearch
-Elasticsearch docker image
+# atotocz/elasticsearch
+
+Elasticsearch docker image with hunspell, icu and kopf plugins.
+
