@@ -28,7 +28,9 @@ RUN set -x \
 	&& apt-get update \
 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION \
 	&& rm -rf /var/lib/apt/lists/* \
-	&& plugin install lmenezes/elasticsearch-kopf/2.0 && plugin install analysis-icu
+	&& plugin install lmenezes/elasticsearch-kopf/2.0 \
+	&& plugin install analysis-icu \
+	&& plugin install delete-by-query
 
 RUN set -ex \
 	&& for path in \
